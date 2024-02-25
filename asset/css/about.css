@@ -1,0 +1,177 @@
+.container-fluid {
+  background-color: var(--bg-color);
+}
+#about {
+  padding: 3rem 0;
+}
+#about h2 {
+  display: inline;
+  font-size: 2.5rem;
+  font-weight: 500;
+  border-bottom: 5px solid var(--red-color);
+}
+#about .title {
+  margin: 2rem 0;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-wrapper ul li i {
+  color: var(--red-color);
+  margin-right: 1rem;
+}
+.about-wrapper ul li {
+  line-height: 2;
+}
+.counts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 2rem;
+}
+.counts .count-item span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--red-color);
+}
+.counts .count-item p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+footer {
+  width: 100%;
+  min-height: 70px;
+  background-color: var(--bg-color);
+}
+footer .cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.2rem;
+}
+footer .cta-banner .cta-banner-left p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: var(--red-color);
+}
+.cta-banner-right .btn {
+  background-color: var(--white-color);
+}
+/* responsive */
+@media only screen and (max-width: 1024px) {
+
+  .navbar .logo {
+    width: 60%;
+  }
+  .navbar .nav-item {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 992px) {
+
+  .navbar .logo {
+    width: 50%;
+  }
+  .navbar .nav-item {
+    width: 50%;
+  }
+  #about {
+    padding: 2rem 0;
+  }
+  #about h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  .navbar .logo {
+    width: 20%;
+  }
+  .navbar .logo i {
+    margin-left: 0rem;
+    font-size: 1.5rem;
+}
+  .navbar .nav-item {
+    width: 80%;
+  }
+  .nav-item ul {
+    margin-right: 0rem;
+}
+  #about {
+    padding: 1.5rem 0;
+  }
+  #about .title {
+    margin: 1.5rem 0;
+    line-height: 1.2;
+}
+.about-wrapper ul li {
+  font-size: 0.9rem;
+}
+  #about h2 {
+    font-size: 2rem;
+  }
+  .counts .count-item span {
+    font-size: 1.5rem;
+}
+.counts .count-item p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+footer{
+  height: 100px;
+}
+footer .cta-banner {
+  flex-direction: column;
+}
+footer .cta-banner .cta-banner-left p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+
+}
+}
+@media only screen and (max-width: 425px) 
+{
+.navbar {
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+.navbar .logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.navbar .logo i{
+  font-size: 2rem;
+
+}
+.navbar .nav-item {
+  width: 100%;
+}
+
+.nav-item ul {
+  margin:2rem 0rem ;
+  gap: 1rem;
+}
+.nav-item ul li a {
+  font-size: 1rem;
+}
+#about .title {
+  margin: 1rem 0;
+}
+.about-wrapper ul li {
+  line-height: 1.5;
+}
+footer{
+  height: 130px;
+}
+footer .cta-banner .cta-banner-left p {
+  margin-top: 0.5rem;
+}
+}

@@ -1,0 +1,112 @@
+#contact {
+  padding: 3rem 0;
+  background: #f7f7f7;
+}
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.form-wrapper .company-address {
+  width: 50%;
+  padding: 2rem 1rem;
+  background-color: var(--white-color);
+}
+.company-address .address-group {
+  margin-bottom: 2rem;
+}
+.company-address .address-group i {
+  display: inline;
+  color: var(--red-color);
+}
+.company-address .address-group h2 {
+  display: inline;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.company-address .address-group p {
+  margin-top: 1rem;
+}
+.company-address img {
+  width: 100%;
+  object-fit: cover;
+}
+.form-wrapper .form-container {
+  width: 50%;
+  margin-left: 2rem;
+  padding: 2rem 1rem;
+  background-color: var(--white-color);
+}
+.form-wrapper .form h2 {
+  display: inline;
+  font-size: 2.5rem;
+  font-weight: 500;
+  border-bottom: 5px solid var(--red-color);
+}
+.form-wrapper .form p {
+  margin: 1rem 0;
+  line-height: 2;
+}
+.form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.form .form-group input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--red-color);
+}
+.form .form-group textarea {
+  width: 100%;
+  height: 15rem;
+  border: 1px solid var(--red-color);
+}
+.form .submit-btn {
+    width: 100%;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  margin-top: 1.5rem;
+}
+footer{
+    height: 130px;
+    position: relative;
+}
+/* responsive */
+@media only screen and (max-width: 1024px) {
+  .form-wrapper {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .form-wrapper .company-address {
+    width: 100%;
+  }
+  .form-wrapper .form-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contact {
+    padding: 1rem 0;
+}
+  footer .social-media-links i {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+}
+@media only screen and (max-width: 425px) {
+.company-address .address-group i,.company-address .address-group h2 {
+    font-size: 1rem;
+}
+  .company-address .address-group {
+    margin-bottom: 1rem;
+}
+.form-wrapper .form h2 {
+  font-size: 1.5rem;
+}
+}
